@@ -1,0 +1,23 @@
+Branching Exercise
+
+Part I
+
+Answer the following questions:
+
+- What git command creates a branch?
+    git branch <name of branch> or git checkout -b <name of branch>
+- What is the difference between a fast-forward and recursive merge?
+    Fast-forward merge is merging automatically, where changes in second branch are added to the unchanged original branch. 
+    While recursive merge happens when new commit changes are done in original branch after creating the second branch that also has commits.
+- What git command changes to another branch?
+    git checkout <name of branch>
+- What git command deletes a branch?
+    git branch -d <name of branch>
+- How do merge conflicts happen?
+    When a commitment of the same file is performed in both original branch and its' second branch. Then trying to merge both branches.
+
+Part II
+
+Practice with fast forward and recursive merges! Make a branch and add and commit onto it and merge it back into master.
+
+Try to create your own merge conflict by modifying the same file on two separate commits on two separate branches.
