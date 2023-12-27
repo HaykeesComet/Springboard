@@ -1,0 +1,25 @@
+body {
+	background: teal;
+	font-family: Questrial;
+	text-align: center;
+	margin-top: 50px;
+}
+
+h1 {
+	color: red;
+	font-family: 'Rubik Doodle Triangles';
+	font-size: 3em;
+}
+
+.meme-container {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+	
+canvas {
+	max-width: 100%;
+	height: auto;
+	display: block;
+}

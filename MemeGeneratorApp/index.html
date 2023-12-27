@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>Meme Generator App</title>
+		<link rel="stylesheet" href="styles.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200&family=Questrial&family=Rubik+Doodle+Triangles&family=Sevillana&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+	</head>
+	<body>
+		<h1>Instant Meme Generator</h1>
+		
+		<label for="imageInput">Upload an image: </label>
+		<input type="file" id="imageInput"><br>
+		<input type="text" id="topTextInput" placeholder="Enter top text">
+		<input type="text" id="bottomTextInput" placeholder="Enter bottom text">
+		
+		<button id="generate-btn">Add Meme</button><br>
+  
+		<h3>Meme Results:</h3>
+  
+		<div id="memeContainersDiv"></div>
+  
+		<script src="script.js"></script>
+	</body>
+</html>
