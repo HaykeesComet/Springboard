@@ -1,0 +1,48 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(to bottom right, #FFA500, #FF4500);
+}
+
+.search-container {
+  text-align: center;
+}
+
+input {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #FF4500;
+  background-color: #FFA500;
+  transition: border-color 0.3s ease-in-out;
+  outline: none;
+}
+
+input:focus {
+  border-color: #FFA500;
+}
+
+.suggestions {
+  display: none;
+  width: 200px;
+  border: 1px solid #FF4500;
+  border-radius: 5px;
+  margin-top: 5px;
+  padding: 0;
+}
+
+.suggestions li {
+  padding: 8px;
+  cursor: pointer;
+  list-style-type: none;
+  background-color: #FFA500;
+}
+
+.suggestions li:hover {
+  background-color: #FF4500;
+}
