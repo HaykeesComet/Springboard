@@ -1,0 +1,43 @@
+let and const Exercise
+
+In this exercise, you’ll refactor some ES5 code into ES2015.
+
+ES5 Global Constants
+
+var PI = 3.14;
+PI = 42; // stop me from doing this!
+
+
+ES2015 Global Constants
+
+/* Write an ES2015 Version */
+
+const PI = 3.14;
+// Attempting to reassign will result in an error
+// PI = 42; // This line will throw an error
+
+
+Quiz
+
+- What is the difference between var and let?
+
+In JavaScript, let and var are both ways to declare variables. The main difference between the two is the scope of the variables they declare. var declarations are globally scoped or function scoped, while let declarations are block scoped.
+
+
+- What is the difference between var and const?
+
+Variables declared with var are function-scoped or globally-scoped, and they are not block-scoped. This means that they are visible throughout the entire function or global context. Variables declared with const (and let) are block-scoped, meaning they are only accessible within the block (enclosed by curly braces) where they are declared.
+
+Variables declared with var are hoisted to the top of their scope and initialized with undefined. This means you can use a var variable before its declaration. Variables declared with const (and let) are also hoisted, but they are not initialized. Trying to access them before declaration results in a ReferenceError.
+
+Given these differences, it's generally recommended to use const by default and only use var when necessary (such as when dealing with legacy code or specific situations where var behavior is desired). Using const helps prevent unintentional reassignments and contributes to better code maintainability.
+
+
+- What is the difference between let and const?
+
+In JavaScript, let and const are both used to declare variables, but they have different characteristics. let is used for variables that can be reassigned or have their values changed. It has a block scope, meaning it can only be accessed within the block where it was declared or within nested blocks. const, on the other hand, is used for variables that cannot be reassigned. It also has a block scope. Once a value is assigned to a const variable, it cannot be changed or reassigned.
+
+
+- What is hoisting?
+
+In JavaScript, hoisting refers to the process whereby the interpreter appears to move the declaration of functions, variables, classes, or imports to the top of their scope, prior to execution of the code. Variables declared with var are hoisted to the top of their scope, and they are initialized with the value undefined. Variables declared with let and const are also hoisted to the top of their scope, but they are not initialized. In general, it's a good practice to declare your variables at the top of their scope to avoid unexpected behavior due to hoisting. Additionally, using let and const is recommended over var for better scoping and avoiding some of the issues associated with var.
