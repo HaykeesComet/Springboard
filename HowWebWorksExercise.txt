@@ -1,0 +1,65 @@
+Part One: Solidify Terminology
+
+In your own terms, define the following terms:
+
+- What is HTTP?
+HTTP stands for Hypertext Transfer Protocol. It is an application layer protocol that is the foundation for data communication on the World Wide Web. HTTP is used for transferring hypermedia documents, such as HTML documents, which make up the content of web pages.
+
+- What is a URL?
+When you enter a URL (Uniform Resource Locator) in your web browser and hit Enter, the browser uses HTTP to request the web page from the server where the page is hosted. The server then responds with the requested information, and your browser interprets and displays it.
+
+- What is DNS?
+DNS stands for Domain Name System. It is a decentralized hierarchical system that translates human-readable domain names into numerical IP (Internet Protocol) addresses. The primary purpose of DNS is to map user-friendly domain names, like www.example.com, to the IP addresses that computers use to identify each other on a network.
+
+- What is a query string?
+A query string is a part of a URL (Uniform Resource Locator) that contains data to be sent to the web server as parameters. It typically follows the question mark "?" character in a URL and consists of key-value pairs separated by ampersands "&". The query string provides additional information about the request being made, and it is commonly used in web applications to pass data between the client (e.g., web browser) and the server.
+
+- What are two HTTP verbs and how are they different?
+HTTP (Hypertext Transfer Protocol) defines several methods or verbs that indicate the desired action to be performed on a resource. Two commonly used HTTP verbs are: GET and POST. The GET method is used to retrieve information from the server. It is a safe and idempotent operation, meaning it should not change the state of the server, and repeated requests should have the same result. The POST method is used to submit data to be processed to a specified resource. It is not idempotent, meaning repeated requests might have different results, and it may change the state of the server.
+
+- What is an HTTP request?
+An HTTP (Hypertext Transfer Protocol) request is a message sent by a client (usually a web browser) to a server, requesting a specific action to be performed or a resource to be provided. HTTP requests are a fundamental part of the communication between clients and servers on the World Wide Web. An HTTP request typically consists of the following components: Request Line - this line contains the HTTP method (or verb), the target URL (Uniform Resource Locator), and the HTTP version. Headers - they provide additional information about the request, such as the type of client making the request, the format of the data it can accept, authentication credentials, and more. Body (Optional) - this body of the request contains additional data, often used with HTTP methods like POST or PUT when sending data to the server.
+
+- What is an HTTP response?
+An HTTP (Hypertext Transfer Protocol) response is a message sent by a server to a client (such as a web browser) in response to an HTTP request. It contains information about the status of the request and may also include the requested data or perform a specific action. HTTP responses are a crucial part of the communication between clients and servers on the World Wide Web. HTTP defines a range of status codes that indicate the result of the request, such as "200 OK" for a successful request, "404 Not Found" for a resource not found, and "500 Internal Server Error" for server-side errors. These status codes help both clients and developers understand the outcome of the request.
+
+- What is an HTTP header? Give a couple examples of request and response headers you have seen.
+HTTP headers are key-value pairs of information included in the header section of both HTTP requests and responses. They provide additional metadata about the message, the request, or the response. Headers convey information such as the type of content being sent, the length of the content, the server type, supported compression algorithms, and more.
+
+Request Headers - Accept:
+Purpose: Informs the server about the types of content that the client can understand or process.
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+
+Response Headers - Content-Type:
+Purpose: Specifies the media type (or MIME type) of the content in the response body.
+Content-Type: text/html; charset=utf-8
+
+- What are the processes that happen when you type “http://somesite.com/some/page.html” into a browser?
+When you type a URL like "http://somesite.com/some/page.html" into a web browser and hit Enter, several processes occur to retrieve and display the requested web page. Here's a simplified overview of the steps involved:
+
+URL Parsing:
+The browser parses the URL to extract information such as the protocol (in this case, "http"), the domain or hostname ("somesite.com"), and the path ("/some/page.html").
+
+DNS Resolution:
+The browser performs a Domain Name System (DNS) resolution to find the IP address associated with the domain "somesite.com." This involves querying DNS servers to obtain the correct IP address.
+
+Establishing a TCP Connection:
+Using the obtained IP address, the browser establishes a TCP (Transmission Control Protocol) connection with the server hosting the website. This is typically done on port 80 for HTTP or port 443 for HTTPS.
+
+HTTP Request:
+The browser sends an HTTP GET request to the server. The request includes the path ("/some/page.html") and other headers, such as user-agent, accept, and others.
+
+Server Processing:
+The web server receives the HTTP request, processes it, and looks for the requested resource ("/some/page.html"). If the resource is found, the server prepares an HTTP response.
+
+HTTP Response:
+The server sends back an HTTP response to the browser. The response includes a status code (e.g., 200 OK), headers (such as Content-Type), and the actual content of the requested web page.
+
+Rendering the Page:
+The browser receives the response and begins rendering the HTML content. It parses the HTML to construct the Document Object Model (DOM) and then fetches additional resources like stylesheets, images, and scripts referenced in the HTML.
+
+Rendering CSS and JavaScript:
+If the web page includes stylesheets (CSS) and scripts (JavaScript), the browser fetches and processes them. CSS is used to style the HTML, and JavaScript can add interactivity and dynamic behavior to the page.
+
+Displaying the Page:
+Finally, the browser displays the fully rendered web page, and you can interact with the content.
