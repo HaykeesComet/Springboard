@@ -20,7 +20,7 @@ $(document).ready(function() {
     });
 
     function fetchApiData(searchTerm, callback) {
-        const apiKey = "GLT3gcqeUC5Z5mDmTGAJmXMRSpTIq1wE";
+        const apiKey = "MhAodEJIJxQMxW9XqxKjyXfNYdLoOIym";
         const apiUrl = `https://api.giphy.com/v1/gifs/search?api_key=${apiKey}&q=${searchTerm}`;
 
         axios
@@ -39,7 +39,7 @@ $(document).ready(function() {
     }
 
     function searchGiphy(searchTerm) {
-        const apiKey = "GLT3gcqeUC5Z5mDmTGAJmXMRSpTIq1wE";
+        const apiKey = "MhAodEJIJxQMxW9XqxKjyXfNYdLoOIym";
         let apiUrl;
 
         if (searchTerm) {
