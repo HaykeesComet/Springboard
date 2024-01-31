@@ -17,14 +17,13 @@ h1 {
   text-decoration: underline overline dotted white;
   color: #8d2ab5;
   font-family: 'Luckiest Guy', cursive;
-  margin: 10px 5px 5px 5px;
   text-align: right;
 }
 
 button {
   background-color: white;
   color: #74119c;
-  margin: 10px;
+  margin-bottom: 50px;
   font-family: 'Luckiest Guy', cursive;
   padding: 10px 20px;
   border-radius: 15px;
