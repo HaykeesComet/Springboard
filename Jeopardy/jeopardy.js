@@ -20,7 +20,7 @@
 
 let categories = [];
 
-const NUM_CATEGORIES = 6;
+const NUM_CATEGORIES = 14;
 const NUM_QUESTIONS_PER_CAT = 5;
 
 /** Get NUM_CATEGORIES random category from API.
@@ -63,15 +63,16 @@ async function fillTable() {
   $thead.empty();
   $tbody.empty();
 
+  const maxColumns = 6; // Set the maximum number of columns
   const $trHead = $('<tr>');
-  for (let i = 0; i < categories.length; i++) {
+  for (let i = 0; i < Math.min(categories.length, maxColumns); i++) {
     $trHead.append(`<td>${categories[i].title}</td>`);
   }
   $thead.append($trHead);
 
   for (let i = 0; i < NUM_QUESTIONS_PER_CAT; i++) {
     const $trBody = $('<tr>');
-    for (let j = 0; j < categories.length; j++) {
+    for (let j = 0; j < Math.min(categories.length, maxColumns); j++) {
       const $td = $(`<td class="clue" data-row="${i}" data-col="${j}">❔</td>`);
       $trBody.append($td);
     }
