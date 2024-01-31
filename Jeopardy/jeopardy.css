@@ -23,7 +23,8 @@ h1 {
 button {
   background-color: white;
   color: #74119c;
-  margin-bottom: 50px;
+  margin-left: 5px;
+  margin-bottom: 5px;
   font-family: 'Luckiest Guy', cursive;
   padding: 10px 20px;
   border-radius: 15px;
