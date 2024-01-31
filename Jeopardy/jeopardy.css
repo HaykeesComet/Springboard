@@ -1,0 +1,75 @@
+/* some colors you may find useful:
+  #115ff4
+  #060ce9
+  #28a200
+  #8d2ab5
+  #74119c
+*/
+
+body {
+  background: rgb(40,162,0);
+  background: linear-gradient(90deg, rgba(40,162,0,1) 0%, rgba(77,203,36,1) 35%, rgba(131,218,103,1) 100%);
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  text-decoration: underline overline dotted white;
+  color: #8d2ab5;
+  font-family: 'Luckiest Guy', cursive;
+  margin-bottom: 20px;
+  text-align: right;
+}
+
+button {
+  background-color: white;
+  color: #74119c;
+  margin: 10px;
+  font-family: 'Luckiest Guy', cursive;
+  padding: 10px 20px;
+  border-radius: 15px;
+  border: none;
+  cursor: pointer;
+}
+
+.important {
+  background-color: orange;
+}
+
+.container {
+  border: 5px white;
+  margin: auto;
+  max-width: 80%;
+  padding: 20px;
+}
+
+.content {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  margin: 20px 0;
+}
+
+thead td,
+tbody tr {
+  width: 100px;
+  height: 100px;
+}
+
+thead td {
+  background-color: #115ff4;
+  font-size: 24px;
+  color: white;
+  text-align: center;
+  font-family: 'Gruppo', sans-serif;
+  border-radius: 15px;
+}
+
+tbody tr {
+  background-color: #060ce9;
+  color: white;
+  text-align: center;
+  font-family: 'Cuprum', sans-serif;
+}
