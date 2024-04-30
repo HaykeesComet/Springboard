@@ -6,11 +6,11 @@
 
 Welcome to Drink Up! - Cocktail Search Application. This web-based platform is designed to allow users to search for cocktails easily and efficiently using an external Cocktails API. Whether you're looking for a classic martini recipe or exploring new and exotic concoctions, Drink Up! has you covered. Dive into the world of mixology and discover your next favorite drink!
 
+Site deployed: [https://capstone-project-one-cocktailsapi.netlify.app/](https://capstone-project-one-cocktailsapi.netlify.app/)
+
 **index.html**
 
 ![1714502327129](image/README/1714502327129.png)
-
-
 
 **drink.html**
 
