@@ -1,0 +1,12 @@
+{% extends 'layout.html' %}
+{% block content %}
+<h2>Your Favorite Drinks</h2>
+<div class="favorites">
+    {% for favorite in favorites %}
+        <div class="drink">
+            <img src="{{ favorite.drink_image }}" alt="{{ favorite.drink_name }}">
+            <h3>{{ favorite.drink_name }}</h3>
+        </div>
+    {% endfor %}
+</div>
+{% endblock %}

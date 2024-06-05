@@ -1,0 +1,52 @@
+/* Add your CSS styles here */
+body {
+    font-family: Arial, sans-serif;
+}
+
+nav {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.section {
+    margin-top: 20px;
+}
+
+.drink {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.drink img {
+    max-width: 100px;
+    margin-right: 20px;
+}
+
+.drink-section img {
+    max-width: 300px;
+    display: block;
+    margin: 0 auto 20px;
+}
+
+.loading {
+    text-align: center;
+}
+
+.loading img {
+    max-width: 50px;
+}
